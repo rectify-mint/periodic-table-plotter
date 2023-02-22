@@ -12,7 +12,7 @@ INSTALL_PATH = os.path.dirname(os.path.abspath(__file__))
 
 __all__ = ['ElementDataPlotter', 'plt', 'Square']
 
-elt_data = yaml.load(open(INSTALL_PATH+'/elements.yml').read())
+elt_data = yaml.load(open(INSTALL_PATH+'/elements.yml').read(),yaml.FullLoader)
 
 def atomic_number(elt):
     """Atomic number (Z)"""

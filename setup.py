@@ -11,6 +11,7 @@ setup(
     package_data = {'': ['*.yml', '*.md']},
     install_requires=[
         'numpy',
-        'matplotlib'
+        'matplotlib',
+        'pyyaml'
     ],
 )
